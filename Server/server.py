@@ -86,8 +86,6 @@ def open_file(request, conn):
     data = None
     is_open = True
     try:
-        print(os.getcwd())
-        print(os.path.exists(filename))
         new_file = open(filename, 'rb')
         data = new_file.read()
         print("hello", data)
